@@ -1,4 +1,5 @@
-import { config } from '@config';
+import config from '@config/app';
+import logger from '@config/logger';
 import app from './app';
 
 const startServer = () => {
@@ -6,7 +7,7 @@ const startServer = () => {
 
     try {
         app.listen(port, () => {
-            console.log(`Authentication Service is running on port ${port}`);
+            logger.info(`Auth Service is running on port ${port}`);
         });
     } catch (error) {
         console.error('Error starting the server:', error);
