@@ -5,7 +5,7 @@ import logger from '@config/logger';
 const app = express();
 
 app.get('/', (_, res) => {
-    res.send('Welcome to Authentication Service!');
+    res.send('Welcome to Auth Service!');
 });
 
 // Global Error Handler
