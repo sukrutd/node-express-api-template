@@ -30,6 +30,7 @@
         "noUncheckedIndexedAccess": true,
 
         /* Environment Mapping */
+        "types": ["node", "jest"],
         "skipLibCheck": true,
 
         /* Configure Import Aliases  */
